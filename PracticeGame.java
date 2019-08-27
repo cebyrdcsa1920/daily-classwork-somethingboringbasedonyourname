@@ -4,6 +4,8 @@ public class PracticeGame
 {
     public static void main(String[]args)
     {
+        /*If you see a throwaway variable that's a single letter it's because the player should hit enter.
+        I'm sure it can be done better but I don't know how.*/
         Scanner keyboard = new Scanner (System.in);
         System.out.println("This is just a practice game with no real literary or entertainment value. I'm just screwing around with coding, but maybe I can do something fun with this eventually! So yeah. It works pretty simply.If there are no options presented but a chunk of text has been provided, hit enter. If there's options, you just type whatever the prompt asks. If there are multiple options, type whatever the option is word for word. Yep! With that out of the way, let's begin!");
         String q = keyboard.nextLine();
@@ -26,6 +28,9 @@ public class PracticeGame
         System.out.println("I don't know  /   What's it to you?    /    Kiss me and I'll tell you");
         System.out.println("");
         String purpose = keyboard.nextLine();
+
+                                                 // First Choice! //
+
             if(purpose.equals("Kiss me and I'll tell you"))
             {
                 System.out.println("");
@@ -46,6 +51,9 @@ public class PracticeGame
                 System.out.println("Ask for help?" + "     Yes / No");
                 System.out.println("");
                 String help = keyboard.nextLine();
+
+                                                // Second choice! //
+
             if (help.equals("Yes"))
             {
                 System.out.println("");
@@ -59,6 +67,9 @@ public class PracticeGame
                 System.out.println("");
                 System.out.println("Accept Maybell's help?" + "    Yes / No");
                 System.out.println("");
+
+                                                // Third choice! //
+
                 String helpTwo = keyboard.nextLine();
                     if (helpTwo.equals("Yes"))
                     {
@@ -78,7 +89,7 @@ public class PracticeGame
 
            }
 
-           System.out.println("Sprite: Alrighty then! Get up so we can go to the village! The chief is very wise and well respected, but he can be very judgemental. You need to look presentable!");
+        System.out.println("Sprite: Alrighty then! Get up so we can go to the village! The chief is very wise and well respected, but he can be very judgemental. You need to look presentable!");
         String u = keyboard.nextLine();
         System.out.println("Ready to leave, you sit up in bed, only to realize you're naked. Naked!? Did this perverted miniature gremlin strip you of your clothes? You shoot her a puzzled, embarassed look.");
         String i = keyboard.nextLine();
@@ -93,6 +104,9 @@ public class PracticeGame
         System.out.println("Leave  /  Stay");
         System.out.println("");
         String begPath = keyboard.nextLine();
+
+                                                // Fourth Choice! //
+
                 if (begPath.equals("Stay"))
             {
                 System.out.println("");
@@ -101,8 +115,11 @@ public class PracticeGame
                 System.out.println("Yes  /  No");
                 System.out.println("");
                 String strangePotions = keyboard.nextLine ();
+
+                                                // Fifth Choice! //
+
                 if (strangePotions.equals("Yes"))
-               {
+            {
                 System.out.println("");
                 System.out.println ("You pick up a glowing potion and drink it. You immediatley drop to the floor and begin writhing helplessly as the world fades to black. Man, if this fariy is supposed to heal people then what just happened? Talk about irnoy. What did you expect, a pair of wings? Game over.");
                 keyboard.close();
@@ -115,10 +132,11 @@ public class PracticeGame
                    String enter= keyboard.nextLine();
                }
             }
+
                 System.out.println("");
                 System.out.println("You decide you shouldn't keep Maybell waiting. You step out the door, and your adventure begins");
                 String s = keyboard.nextLine();
-                System.out.println("As you're following Maybell through the forest, you can't help but admire the forest. Fireflies mosey around and light up the path, tree sap fills the air with a sweet, tantalizing aroma, and you occasionally catch glimpses of exotic wildlife. You don't know where you're from, but wherever that is, its beauty cannot compare to this. ");
+                System.out.println("As you're following Maybell through the forest, you can't help but admire the scenery. Fireflies mosey around and light up the path, tree sap fills the air with a sweet, tantalizing aroma, and you occasionally catch glimpses of exotic wildlife. You don't know where you're from, but wherever that is, its beauty cannot compare to this. ");
                 String d = keyboard.nextLine();
                 System.out.println("Sprite: Hey... I'm sure this is a touchy subject, but don't you remember anything at all? Family? Friends? Your home?");
                 System.out.println("");
@@ -126,6 +144,9 @@ public class PracticeGame
                 System.out.println("");
                 String touchy = keyboard.nextLine ();
                 System.out.println("");
+
+                                                    // Sixth Choice! //
+
                 if(touchy.equals("Nope, not a thing."))
                 {
                     System.out.println("Sprite: Oh man, that's tough. Well, the village Oracle could possibly help recover them! It's always worth a shot. Besides, it'd at least be nice for you to meet her. We'll pay her a visit when we get there!");
@@ -141,6 +162,7 @@ public class PracticeGame
                     System.out.println("Sprite: Nice try " + name + ", but you'll have to try harder than that!");
                     String h = keyboard.nextLine();
                 }
+
                 System.out.println("You may or may not be letting it on, but you appreciate Maybell's company. You'd be lost without her.");
                 System.out.println("Everything is going smoothly. You haven't been talking to Maybell much, but you're enjoying yourself.");
                 System.out.println("You hear something to your right. You jerk your head to look at it, fearful of bandits or the like. You see that it's just a cute little squirell! You stop for a second to look at it until- snap!");
@@ -150,6 +172,9 @@ public class PracticeGame
                 System.out.println("Yell    /    Wait");
                 System.out.println("");
                 String trapUno = keyboard.nextLine();
+
+                                                // Seventh Choice! //
+
                 if(trapUno.equals("Wait"))
                 {
                     System.out.println("");
@@ -162,6 +187,7 @@ public class PracticeGame
                     System.out.println("You decide to yell! Maybell hears you and flies over as soon as she possibly can! Unfortunately, your yell alterted attackers that their trap worked!");
                     String z = keyboard.nextLine();
                 }
+
                 System.out.println("Good job, " + name + "! You've triggered your first battle worse than a reddit user with >10,000 karma!");
                 String x = keyboard.nextLine();
                 System.out.println("Three goblins jump out from their hiding spots and surround you and Maybell! fight, or flee?");
@@ -170,23 +196,37 @@ public class PracticeGame
                 System.out.println("");
                 String battleUno = keyboard.nextLine();
                 System.out.println("");
+
+                                                // Eighth Choice! //
+
                 if(battleUno.equals("Flee"))
                 {
-                    System.out.println("Yeah, nice try bud. You're surrounded, dingus. Don't be a soy boy.");
+                    System.out.println("Yeah, nice try bud. You're surrounded. Don't be a soy boy.");
                     String c = keyboard.nextLine();
                 }
+
                 System.out.println("You have to attack one of the three goblins. Attack 1, 2, or 3?");
                 System.out.println("");
                 System.out.println("1    /    2    /    3");
                 System.out.println("");
+
+                                                // Ninth Choice! //
+
                 String goblinchoiceuno = keyboard.nextLine();
                 System.out.println("");
                 System.out.println("You've chosen to attack goblin " + goblinchoiceuno + "! You throw a rock at it. It misses, but it chases it into a stream and the two others chased after.");
                 String v = keyboard.nextLine();
                 System.out.println("Congratulations! You succesfullly won your first enemy encounter!");
                 String b = keyboard.nextLine();
-                System.out.println("Sprite: Geeze " + name + ", that was scary! I'm glad those goblins were foolish enough to fall for that. I know I'm supposed to care for all creatures, but goblins just give me the heebie jeebies! I wonder why they decided to attack... this can't be any good");
+                System.out.println("Sprite: Geeze " + name + ", that was scary! I'm glad those goblins were foolish enough to fall for that. I know I'm supposed to care for all creatures, but goblins just give me the heebie jeebies! I wonder why they decided to attack... this can't be any good.");
                 String n = keyboard.nextLine();
+                System.out.println("When you arrive in the village, you're taken aback. The lights, the banners, the costumes! It appears that you've arrived in the midst of a celebration! You spot a crowd huddled around something, but you can't see what. You decide to get closer.");
+                String m = keyboard.nextLine();
+                System.out.println("It's a little girl");
+                String qw = keyboard.nextLine
+                System.out.println("She's dead.");
+                String qe = keyboard.nextLine();
+                System.out.println("You take a step back. You can't tear your eyes from the scene. Maybell gently floats to the ground and backs away slowly. This is not what you'd expected.");
                 System.out.println("That's all I've got written so far! Thanks for playing!");
     }
 }
