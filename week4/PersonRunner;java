@@ -1,0 +1,6 @@
+public class PersonRunner
+{
+    public static void main(String[] args)
+    {
+        Person me = new Person("Joe",Color.BLUE, Color.Pink, "
+    }
