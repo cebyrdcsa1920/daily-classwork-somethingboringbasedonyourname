@@ -16,9 +16,14 @@ public class Person
         lengthInches = 0;
     }
 
-    public Person(String gender, Color color, Color hairColor, String hairLength)
+    public Person(String name, String gender, Color color, Color hairColor, String hairLength, lengthInches);
     {
+        this.name = name;
         this.gender = gender;
+        this.color = Color;
+        this.hairColor = Color;
+        this.hairLength =  hairLength;
+        this.lengthInches = lengthInches;
     }
     /*
     public Person()
