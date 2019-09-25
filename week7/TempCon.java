@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class TempCon
 {
     private double temp;
@@ -42,7 +44,12 @@ public class TempCon
 
     public static void main(String[] args)
     {
-        TempCon myTemp = new TempCon(25.6);
+
+        Scanner kboard = new Scanner(System.in);
+        System.out.println("Enter a temperature in celsius :");
+        double input = kboard.nextDouble();
+        kboard.nextLine();
+        TempCon myTemp = new TempCon(input);
         System.out.println(myTemp);
         myTemp.convertToF();
         System.out.println(myTemp);
